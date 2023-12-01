@@ -5,10 +5,10 @@
   "main": "app.js",
   "scripts": {
     "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon app.js\"",
-    "start": "npm install && npm install sqlite3 && node app.js",
+    "start": "node app.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "postinstall": "npm rebuild sqlite3"
+    "postinstall": "npm install sqlite3"
   },
   "repository": {
     "type": "git",
