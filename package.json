@@ -4,8 +4,8 @@
   "description": "Student project",
   "main": "app.js",
   "scripts": {
-    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
-    "start": "tsc && node dist/index.js",
+    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon app.js\"",
+    "start": "node app.js",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
