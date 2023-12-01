@@ -32,7 +32,6 @@
     "mysql": "^2.18.1",
     "recaptcha-verify": "^0.1.1",
     "socket.io": "^4.7.2",
-    "sqlite3": "^5.1.6",
     "typescript-cookie": "^1.0.6"
   },
   "devDependencies": {
