@@ -7,7 +7,8 @@
     "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon app.js\"",
     "start": "node app.js",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "postinstall": "npm rebuild sqlite3"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,7 @@
     "mysql": "^2.18.1",
     "recaptcha-verify": "^0.1.1",
     "socket.io": "^4.7.2",
-    "typescript-cookie": "^1.0.6",
-    "sqlite3": "^5.1.6" 
+    "typescript-cookie": "^1.0.6"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
